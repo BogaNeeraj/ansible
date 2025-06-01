@@ -1,6 +1,6 @@
 - name: variables from playlevel 
   hosts: local
-  connections: local
+  connection: local
   var_files: 
   - COURSE.yaml
   tasks:
