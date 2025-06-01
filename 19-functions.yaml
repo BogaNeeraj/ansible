@@ -17,5 +17,11 @@
     ansible.builtin.debug:
      msg: "{{ greeting | lower }}"
 
+  - name: get the values in uniques
+    vars: 
+     values: [3,5,1,9,8,4]
+    ansible.builtin.debug:
+     msg: "Ascending order is : {{ values | unique}}"
+
   
 
