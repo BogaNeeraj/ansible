@@ -1,8 +1,8 @@
 - name: checking data types
-  hosts: localhost
+  hosts: local
   condition: local
   vars: 
-    NAME: joindevops #key value 
+    name: joindevops #key value 
     # COURSES: #list
     #  - DevOps
     #  - DevSecOps
@@ -15,7 +15,7 @@
   tasks:
   - name: print key value pair
     ansible.builtin.debug:
-     msg: "Name: {{ NAME}}"   
+     msg: "Name: {{ NAME }}"   
 
   # - name: print list
   #   ansible.builtin.debug:
