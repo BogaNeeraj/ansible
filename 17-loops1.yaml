@@ -1,0 +1,13 @@
+- name: install the services
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install the services
+    ansible.builtin.package:
+     name: "{{ item }}"
+     state: present
+    loop:
+    - git 
+    - mysql
+    - java
+    
