@@ -1,6 +1,6 @@
 - name: checking the datatypes
   hosts: local
-  condition: local
+  connection: local
   vars:
    NAME: JoinDevops
   tasks:
