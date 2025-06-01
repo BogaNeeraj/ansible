@@ -29,14 +29,23 @@
     ansible.builtin.debug:
      msg: "min : {{ values | min }}, max : {{ values | max }}"
 
-  - name: convert the map to list
-    vars: 
-     course:
-      name: "DevOps"
-      duration: 120
-      trainer: "sivakumar"
+  - name: convert map to list
+    vars:
+      course:
+        name: "DevOps with AWS"
+        duration: 120
+        trainer: "sivakumar reddy"
     ansible.builtin.debug:
-     msg: "{{ course || dic2items }}"
+      msg: "{{ course | dict2items }}"
+
+  # - name: convert the map to list
+  #   vars: 
+  #    course:
+  #     name: "DevOps"
+  #     duration: 120
+  #     trainer: "sivakumar"
+  #   ansible.builtin.debug:
+  #    msg: "{{ course || dic2items }}"
 
   
 
