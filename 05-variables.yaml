@@ -1,0 +1,6 @@
+- name: play level variables
+  hosts: local
+  tasks:
+   - name: print course information
+     ansible.builtin.debug:
+      msg: "Hello Ansible, course durarion is 120 hours, course trainer is shiva"
