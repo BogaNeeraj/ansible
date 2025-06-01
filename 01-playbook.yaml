@@ -1,15 +1,6 @@
-- name: ansible ping playbook  #name of the playbooks
-  hosts: web              #host name which is mentioned in the inventory file
-  tasks: #list of tasks
-  - name: ping the node server #name of the task
-    ansible.builtin.ping:
+- name: ansible ping playbook
+  hosts: Web
+  tasks:
+    - name: Ping the target hosts
+      ansible.builtin.ping:
 
-
-
-
-#Command to run this play book:
-#Create an inventory  file add the host name and Ip 
-#ansible-playbook -i <Inventory file name> -e ansible_user=<username> -e ansible_password=<passwrd> <Playbook name>
-#To run shell script i linux - sh <Shellscriptname>.sh
-#To run Playbook - ansible-playbook <Playbook name>.yml
-#To check the palybook syntax use --syntax-check 
