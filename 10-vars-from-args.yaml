@@ -5,3 +5,7 @@
   - name: check variables
     ansible.builtin.debug:
      msg: "Hello {{ PERSON }}, good {{ WISHES }}"
+
+
+#command to run
+#ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e "PERSON=Neeraj" -e "WISHES=Morning!" 10-vars-from-args.yaml
