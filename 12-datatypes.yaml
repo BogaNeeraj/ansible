@@ -4,6 +4,6 @@
   vars:
    NAME: JoinDevops
   tasks:
-  - name: printing the key value pair
-    ansible.builtin.debug:
-     msg: "Name : {{ NAME }}"
+   - name: printing the key value pair
+     ansible.builtin.debug:
+      msg: "Name : {{ NAME }}"
