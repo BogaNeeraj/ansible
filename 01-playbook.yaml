@@ -1,5 +1,5 @@
 - name: ansible ping playbook
-  hosts: Web
+  hosts: frontend
   tasks:
     - name: Ping the target hosts
       ansible.builtin.ping:
