@@ -1,0 +1,14 @@
+- name: install the services
+  hosts: frontend
+  beccome: yes
+  tasks:
+  - name: install the services
+    ansible.builtin.package:
+     name: "{{ item.name }}"
+     state: "{{ item.state }}"
+    loop:
+    - { name: 'nginx', state: 'present'}
+    - { name: 'mysql', state: 'absent'}
+    - { name: 'zip', state: 'present'}
+    - { name: 'java', state: 'present'}
+    
