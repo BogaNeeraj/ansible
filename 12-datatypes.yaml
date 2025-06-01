@@ -1,4 +1,4 @@
-- name: working with the datatypes
+- name: checking data types
   hosts: local
   condition: local
   vars: 
