@@ -19,9 +19,9 @@
 
   - name: get the values in uniques
     vars: 
-     values: [3,5,1,9,8,4]
+     values: [3,5,1,9,8,1,3,4]
     ansible.builtin.debug:
-     msg: "Ascending order is : {{ values | unique}}"
+     msg: "Get the unique values is : {{ values | unique}}"
 
   
 
