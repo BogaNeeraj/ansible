@@ -1,0 +1,9 @@
+- name: variables from playlevel 
+  hosts: local
+  connections: local
+  var_files: 
+  - COURSE.yaml
+  tasks:
+   - name: Check variables
+     ansible.builtin.debus:
+      msgs: I'm learning {{ COURSE }}, course duration is {{ DURATION }} and trainer is {{ TRAINER }}
