@@ -3,28 +3,28 @@
   condition: local
   vars: 
     NAME: joindevops #key value 
-    COURSES: #list
-     - DevOps
-     - DevSecOps
-     - DevOps with AWS
-     - AWS
-    Trainerswithexperiance: #key value pair
-     Siva: 12 years
-     Raghu: 10 years
-    Trainer: True #boolean
+    # COURSES: #list
+    #  - DevOps
+    #  - DevSecOps
+    #  - DevOps with AWS
+    #  - AWS
+    # Trainerswithexperiance: #key value pair
+    #  Siva: 12 years
+    #  Raghu: 10 years
+    # Trainer: True #boolean
   tasks:
   - name: print key value pair
     ansible.builtin.debug:
      msg: "Name: {{ NAME}}"   
 
-  - name: print list
-    ansible.builtin.debug:
-     msg: "courses: {{ courses }}"
+  # - name: print list
+  #   ansible.builtin.debug:
+  #    msg: "courses: {{ courses }}"
 
-  - name: print map
-    ansible.builtin.debug:
-     msg: "Training with experiance : {{ Trainerswithexperiance }}"  
+  # - name: print map
+  #   ansible.builtin.debug:
+  #    msg: "Training with experiance : {{ Trainerswithexperiance }}"  
 
-  - name: print boolean
-    ansible.builtin.debug:
-     msg: "is they are trainer: {{ Trainer }}" 
+  # - name: print boolean
+  #   ansible.builtin.debug:
+  #    msg: "is they are trainer: {{ Trainer }}" 
