@@ -1,6 +1,6 @@
 - name: install the services
   hosts: frontend
-  beccome: yes
+  become: yes
   tasks:
   - name: install the services
     ansible.builtin.package:
