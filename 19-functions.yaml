@@ -33,7 +33,7 @@
     vars: 
      course:
       name: "DevOps"
-      duration: "120 hours"
+      duration: 120 hours
       trainer: "sivakumar"
     ansible.builtin.debug:
      msg: "{{ course || dic2items }}"
