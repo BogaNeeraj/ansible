@@ -3,7 +3,7 @@
   condition: local
   vars: 
     NAME: joindevops #key value 
-    courses: #list
+    COURSES: #list
      - DevOps
      - DevSecOps
      - DevOps with AWS
