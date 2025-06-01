@@ -1,5 +1,5 @@
 - name: checking data types
-  hosts: local
+  hosts: localhost
   condition: local
   vars: 
     NAME: joindevops #key value 
