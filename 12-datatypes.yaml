@@ -1,9 +1,29 @@
-- name: checking the datatypes
+- name: checking data types
   hosts: local
   connection: local
-  vars:
-   NAME: JoinDevops
+  vars: 
+    name: joindevops #key value 
+    # COURSES: #list
+    #  - DevOps
+    #  - DevSecOps
+    #  - DevOps with AWS
+    #  - AWS
+    # Trainerswithexperiance: #key value pair
+    #  Siva: 12 years
+    #  Raghu: 10 years
+    # Trainer: True #boolean
   tasks:
-   - name: printing the key value pair
-     ansible.builtin.debug:
-      msg: "Name : {{ NAME }}"
+  - name: print key value pair
+    ansible.builtin.debug:
+     msg: "Name: {{ NAME }}"   
+
+  # - name: print list
+  #   ansible.builtin.debug:
+  #    msg: "courses: {{ courses }}"
+
+  # - name: print map
+  #   ansible.builtin.debug:
+  #    msg: "Training with experiance : {{ Trainerswithexperiance }}"  
+
+  # - name: print boolean
+  #   ansible.builtin.debug:
