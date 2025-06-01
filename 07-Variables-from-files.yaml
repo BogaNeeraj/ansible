@@ -5,5 +5,5 @@
   - COURSE.yaml
   tasks:
    - name: Check variables
-     ansible.builtin.debus:
+     ansible.builtin.debug:
       msgs: I'm learning {{ COURSE }}, course duration is {{ DURATION }} and trainer is {{ TRAINER }}
