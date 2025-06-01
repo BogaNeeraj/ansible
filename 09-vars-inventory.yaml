@@ -1,3 +1,5 @@
+
+#The playbook will collect the information from invertory file
 - name: variables from inventory
   hosts: local
   connection: local
@@ -5,3 +7,9 @@
   - name: print course information
     ansible.builtin.debug:
      msg: "Helo, I'm learninig {{ COURSE }}, Course duration is {{ DURATION }} and trainer is {{ TRAINER }}"
+
+ #Add the below data in inventory file.
+#[localhost]
+#Course="Devops"
+#Trainer="Sivakumar"
+#Duration="110Hrs"    
