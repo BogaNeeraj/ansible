@@ -22,7 +22,11 @@
 
   - name: check the process
     ansible.builtin.shell: ps -ef | grep ssh
-    register: result
+    register: ssh_result
+
+  - name: check the process
+    ansible.builtin.debug: 
+     msg: "{{ ssh_result }}"
 
   - name: check the process
     ansible.builtin.command: ps -ef | grep ssh
