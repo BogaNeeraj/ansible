@@ -30,7 +30,7 @@
 
   - name: check the process
     ansible.builtin.command: ps -ef | grep ssh
-    register: ssh_result1
+    register: ssh_output1
 
   - name: check the process
     ansible.builtin.debug: 
