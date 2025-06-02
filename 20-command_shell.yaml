@@ -11,5 +11,14 @@
     ansible.builtin.debug:
      msg: "{{ output }}"
 
+  - name: redirect output to the file
+    ansible.builtin.command: "ls -ltr"
+    #ansible.builtin.shell: "ls -ltr > /tmp/output.txt "
+    register: output1
+  
+  - name: print the output
+    ansible.builtin.debug:
+     msg: "{{ output1 }}"
+
    
      
