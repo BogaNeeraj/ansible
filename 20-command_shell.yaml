@@ -8,7 +8,7 @@
     register: output
   
   - name: print the output
-    anaible.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{ output }}"
 
    
