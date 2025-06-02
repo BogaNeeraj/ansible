@@ -14,4 +14,6 @@
   - name: print message1
     ansible.builtin.debug:
      msg: " Hello DevSecOps "
-     
+    
+
+    # ansible-playbook -i inventory.ini 21-tags.yaml -t Devops to run the tag
